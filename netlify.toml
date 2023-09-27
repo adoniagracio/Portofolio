@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/indax.html"
+status = 200
