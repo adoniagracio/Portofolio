@@ -713,7 +713,7 @@ section{
 .last-text p{
     width: 100%;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     background: rgb(7,85,91);
     font-weight: 300;
     margin-top: 70px;
@@ -773,3 +773,23 @@ section{
     }
 
 }
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/* @media  screen and (max-width: 952px) {
+
+}
+@media  screen and (max-width: 858px) {
+
+} */
