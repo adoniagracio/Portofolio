@@ -346,6 +346,12 @@ section{
 .bar{
     font-size: 23px;
 }
+    .technical-bars{
+        gap:20px;
+        display: flex;
+        flex-direction: column;
+    }
+
 .technical-bars .bar{
     margin-top: 40px 0;
 }
@@ -909,6 +915,11 @@ section{
         align-items: center;
         justify-content: center;
     }
+    .technical-bars{
+        gap:20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 752px) {
@@ -987,12 +998,18 @@ section{
     .container1{
         /* margin-left: 50px    ; */
         margin-left: 0px;
-        /* width: 100%; */
+        width: 100%;
         padding: 0px;
     }
 
     .container-hardskill {
         padding: 50px;
+
+    }
+    .technical-bars{
+        gap:20px;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact {
