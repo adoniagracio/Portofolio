@@ -863,27 +863,51 @@ section{
 }
 
 
-@media  screen and (max-width: 952px) {
+@media  screen and (max-width: 1300px) {
 
     .navbar a{
         font-size: 16px;
     }
-    .img{
-        left: 110px;
-        width: 31%;
-        height: 50%;
-        border-radius: 50%; 
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
     }
-    /* .img2{
-        position: absolute;
-        width: 30%;
-        height: auto;
-        left: 90px;
-        top:150%;
-        
-    } */
+    .about-img{
+        display: flex;
+        padding-left: 0px;
+        width: 100%;
+        justify-content : center;
+        margin: auto;
+    }
+    .about-text{
+        text-align: center;
+        padding-right: 0px;
+        padding-top: 50px;
+    }
+    .home-content{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .home-content-text{
+        padding-bottom: 140px;
+        align-items: center;
+        gap:4px;
+    }
+    .home{
+        height: 1500px;
+    }
     .container1{
-        /* margin-left: 100px; */
+        margin-left: 0px;
+    }
+    .skill{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -996,10 +1020,6 @@ section{
         justify-content: center;
     }
 
-    
-/* .contact-form-responsive form{
-    position:relative;
-} */
 .contact-form-responsive form input,form textarea{
     border: none;
     outline: none;
@@ -1061,9 +1081,6 @@ section{
     font-size: 30px;
 }
 
-.row {
-    /* width: 100%; */
-}
 
 .portfolio-content {
     display: flex;
@@ -1098,7 +1115,4 @@ section{
     background-color: white;
 }
 
-.heading1{
-
-}
 }
