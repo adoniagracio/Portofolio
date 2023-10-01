@@ -408,6 +408,9 @@ section{
 .progress-line.java span{
     width: 80%;
 }
+.progress-line.cbiasa span{
+    width: 90%;
+}
 
 .progress-line span::after{
     position: absolute;
@@ -432,6 +435,9 @@ section{
 }
 .progress-line.java span::after{
     content: "80%";
+}
+.progress-line.cbiasa span::after{
+    content: "90%";
 }
 .progress-line span::before{
     content: "";
@@ -968,6 +974,7 @@ section{
     .home-content {
         flex-direction: column;
         justify-content: center;
+        
     }
 
     .home-content-text {
@@ -980,6 +987,7 @@ section{
         width: 200px;
         height: 200px;
         margin: auto;
+        margin-bottom: 40px;
     }
 
     .home {
@@ -994,6 +1002,7 @@ section{
     .home-content {
         padding: 0px;
         margin: 0px;
+     
     }
     .container1{
         /* margin-left: 50px    ; */
