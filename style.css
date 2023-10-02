@@ -345,12 +345,38 @@ section{
 }
 .bar{
     font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
-    .technical-bars{
-        gap:20px;
-        display: flex;
-        flex-direction: column;
-    }
+.technical-bars{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left:120px;
+}
+.bar i{
+    border: 5px solid;
+    border-radius: 40px;
+    padding: 20px;
+}
+.bar span{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+}
+.technical-bars .bar .info span{
+    font-size: 17px;    
+    font-weight: 500;
+    top: 20px;
+}
+/* .technical-bars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .technical-bars .bar{
     margin-top: 40px 0;
@@ -452,7 +478,7 @@ section{
     right: 0;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
-}
+} */
 @keyframes showText{
     100%{
         opacity: 1;
@@ -519,33 +545,34 @@ section{
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 120;;
+        stroke-dashoffset: 0;;
     }
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 90;;
+        stroke-dashoffset: 0;;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 120;;
+        stroke-dashoffset: 0;;
     }
 }
 @keyframes animate-path4{
     100%{
-        stroke-dashoffset: 70;;
+        stroke-dashoffset: 0;;
     }
 }
-.radial-bar .percentage{
+.radial-bar .icon{
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 17px;
+    font-size: 30px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
 }
+
 
 .radial-bar .text{
     width: 100%;
@@ -921,8 +948,17 @@ section{
         align-items: center;
         justify-content: center;
     }
+    .bar{
+        display: flex;
+        flex-direction: column;
+    }
     .technical-bars{
         gap:20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .technical-bars span{
         display: flex;
         flex-direction: column;
     }
