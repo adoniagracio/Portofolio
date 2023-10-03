@@ -5,7 +5,6 @@ var typed = new Typed(".text",{
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
-    loop:true
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
