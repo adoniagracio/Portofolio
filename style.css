@@ -1018,42 +1018,29 @@ nav .mainMenu .closeMenu,
         margin: auto;
     }
 
-    
-
     .home-content {
         flex-direction: column;
         justify-content: center;
-        
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 500px;
     }
 
     .home-content-text {
-        width: 400px;
+        width: 100%;
         height: auto;
         text-align: center;
         align-items: center;
+        margin-top: 70px;
     }
 
     .img {
-        position: absolute;
         width: 300px;
         height: 300px;
-        padding-top: 80px;
-        margin-bottom: 1000px;
+        padding-top: 50px;
+        margin-top: 400px;
     }
 
-    .home {
-        padding: 0px;
-        padding-top: 100px;
-        padding-left: 15px;
-        padding-right: 15px;
-        height: 900px;
-    }
-
-    .home-content {
-        padding: 0px;
-        margin: 0px;
-        padding-top: 400px;
-    }
     .container1{
         /* margin-left: 50px    ; */
         margin-left: 0px;
