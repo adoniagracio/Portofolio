@@ -1072,7 +1072,7 @@ nav .mainMenu .closeMenu,
         gap:20px;
         display: flex;
         flex-direction: column;
-        margin-left:50px;
+        margin-left:-120px;
     }
 
     .contact {
@@ -1225,7 +1225,6 @@ nav .mainMenu a:hover {
 }
   .icons i {
     display: inline-block;
-    margin-right: 15px;
     border: 2px solid;
     border-radius: 20px; 
   }
