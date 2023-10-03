@@ -920,7 +920,14 @@ nav .mainMenu .closeMenu,
 
 
 @media  screen and (max-width: 1300px) {
-
+    .img{
+        width: 500px;
+        height: 500px;
+    }
+    .img2{
+        width: 450px;
+        height: 500px;
+    }
     .navbar a{
         font-size: 16px;
     }
@@ -972,7 +979,6 @@ nav .mainMenu .closeMenu,
 .technical-bars{
     display: flex;
     flex-direction: column;
-    padding-left: 160px;
 }
 }
 
@@ -980,8 +986,8 @@ nav .mainMenu .closeMenu,
 
 @media screen and (max-width: 752px) {
     .img2{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .header {
@@ -992,7 +998,6 @@ nav .mainMenu .closeMenu,
         flex-direction: column;
         width: 100%;
         justify-content: center;
-        /* align-items: center; */
         margin: 0px;
         padding: 0px;
         padding-top: 150px;
@@ -1013,13 +1018,6 @@ nav .mainMenu .closeMenu,
         margin: auto;
     }
 
-    .checkbtn {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
     
 
     .home-content {
@@ -1029,17 +1027,18 @@ nav .mainMenu .closeMenu,
     }
 
     .home-content-text {
-        width: 100%;
+        width: 400px;
+        height: auto;
         text-align: center;
         align-items: center;
     }
 
     .img {
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        margin-top: -30px;
-        margin-bottom: 60px;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        padding-top: 80px;
+        margin-bottom: 1000px;
     }
 
     .home {
@@ -1047,14 +1046,13 @@ nav .mainMenu .closeMenu,
         padding-top: 100px;
         padding-left: 15px;
         padding-right: 15px;
-
         height: 900px;
     }
 
     .home-content {
         padding: 0px;
         margin: 0px;
-     
+        padding-top: 400px;
     }
     .container1{
         /* margin-left: 50px    ; */
@@ -1072,7 +1070,7 @@ nav .mainMenu .closeMenu,
         gap:20px;
         display: flex;
         flex-direction: column;
-        margin-left:-120px;
+        margin-left:60px;
     }
 
     .contact {
