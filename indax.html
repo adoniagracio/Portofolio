@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
     
     <header class="header">
-        <label for="check" class="checkbtn">
-            <i class="bx bx-menu"></i>
-        </label>
         <a href="#" class="logo"></a>
-        <nav class="navbar">
+        <nav>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
             <a href="#home" style="--i:1"class = "active">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#Skills" style="--i:3">Skill</a>
             <a href="#project" style="--i:4">Project</a>
-            <a href="#contact" style="--i:5">Contact</a>            
-        </nav>
+            <a href="#contact" style="--i:5">Contact</a>  
+            <div class="closeMenu"><i class="fa fa-times"></i></div>    
+            <span class="icons">
+                <a href="https://github.com/adoniagracio" target="_blank"><i class="fab fa-github"></i></a>
+            </span>
+        </ul>   
+    </nav>
     </header>
     <section class="home" id="home">
         <div class="home-content">
@@ -29,7 +36,7 @@
             <img class="img" src="img/photo_profil.png" alt="imgabout">
             <div class="home-content-text">
                 <h3>Hello, My Name is</h3>
-                <h1>Adonia Gracio</h1>
+                <h1 class="name">Adonia Gracio</h1>
                 <h3>And I'm a <span class="text"></span></h3>
                 <p>
                     As a motivated student majoring in Computer Science,
@@ -61,37 +68,51 @@
             </p>
             <a href="https://api.whatsapp.com/send?phone=6288806014761" target="_blank" class="btn-box">More About Me </a>
         </div>
-    </section>
-    <!-- <section>
-        <div class="experience" id="experience">
-            <div class="container">
-                <h1 class="sub-title">My <span>Experience</span></h1>
-                <div class="experience-list">
-                    <div>
-                        <h2>kerja</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis maiores sunt voluptas, voluptatum eum nulla corporis doloribus
-                            exercitationem non itaque placeat iure, repellendus architecto nisi, fugit aperiam pariatur accusantium error.
-                        </p>
-                        <a href="#" class="read">Learn More</a>
-                    </div>
-                    <div>
-                        <h2>kerja</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis maiores sunt voluptas, voluptatum eum nulla corporis doloribus
-                            exercitationem non itaque placeat iure, repellendus architecto nisi, fugit aperiam pariatur accusantium error.
-                        </p>
-                        <a href="#" class="read">Learn More</a>
-                    </div>
-                    <div>
-                        <h2>kerja</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis maiores sunt voluptas, voluptatum eum nulla corporis doloribus
-                            exercitationem non itaque placeat iure, repellendus architecto nisi, fugit aperiam pariatur accusantium error.
-                        </p>
-                        <a href="#" class="read">Learn More</a>
-                    </div>
-                </div>
+    </section>     
+        <!-- <h1 class="process">Experience</h1>
+        <br> 
+        <div class="process-wrapper">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active"><div class="step-inner">Experience1</div></li>
+                <li class="step step02"><div class="step-inner">Experience2</div></li>
+                <li class="step step03"><div class="step-inner">Experience3</div></li>
+                <li class="step step04"><div class="step-inner">Experience4</div></li>
+                <li class="step step05"><div class="step-inner">Experience5</div></li>
+            </ul>
+            
+            <div id="line">
+                <div id="line-progress"></div>
             </div>
         </div>
-    </section> -->
+        
+        <div id="progress-content-section">
+            <div class="section-content discovery active">
+                <h2>Experience1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content strategy">
+                <h2>Experience2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content creative">
+                <h2>Experience3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content production">
+                <h2>Experience4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            
+            <div class="section-content analysis">
+                <h2>Experience5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit orci.</p>
+            </div>
+            </div>
+        </div> -->
     <h1 class="sub-title"id="Skills">My <span>Skills</span></h1>
     <section class="skill">
         <div  class="container1 container-hardskill" >
@@ -149,7 +170,6 @@
                     <circle class="progress-bar" cx = "100" cy ="100" r="80"></circle>
                     <circle class="path path-1" cx = "100" cy ="100" r="80"></circle>
                 </svg>
-                <!-- <div class="percentage">80%</div> -->
                 <div class="icon"><i class='bx bxl-redux'></i></div>
                 <div class="text">Creativity</div>
             </div>
@@ -158,7 +178,6 @@
                     <circle class="progress-bar" cx = "100" cy ="100" r="80">  </circle>
                     <circle class="path path-2" cx = "100" cy ="100" r="80">  </circle>
                 </svg>
-                <!-- <div class="percentage">85%</div> -->
                 <div class="icon"><i class='bx bx-user-voice' ></i></div>
                 <div class="text">Comunication</div>
             </div>
@@ -167,7 +186,6 @@
                     <circle class="progress-bar" cx = "100" cy ="100" r="80">  </circle>
                     <circle class="path path-3" cx = "100" cy ="100" r="80">  </circle>
                 </svg>
-                <!-- <div class="percentage">80%</div> -->
                 <div class="icon"><i class='bx bx-wrench' ></i></div>
                 <div class="text">Problem Solving</div>
             </div>
@@ -176,7 +194,6 @@
                     <circle class="progress-bar" cx = "100" cy ="100" r="80">  </circle>
                     <circle class="path path-4" cx = "100" cy ="100" r="80">  </circle>
                 </svg>
-                <!-- <div class="percentage">90%</div> -->
                 <div class="icon"><i class='bx bx-group'></i></div>
                 <div class="text">Teamwork</div>
             </div>
