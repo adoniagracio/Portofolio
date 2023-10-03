@@ -1202,6 +1202,7 @@ nav .mainMenu {
     left: 0px;
     text-align: center;
     z-index: 10;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1218,6 +1219,9 @@ nav .mainMenu .closeMenu {
     right: 20px;
 
   }
+nav .mainMenu > a{
+    margin-left: 0px;
+}
 nav .openMenu {
     display: block;
   }
@@ -1229,5 +1233,6 @@ nav .mainMenu a:hover {
     display: inline-block;
     border: 2px solid;
     border-radius: 20px; 
+    margin-right: 35px;
   }
 }
