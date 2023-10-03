@@ -1198,8 +1198,9 @@ nav .mainMenu {
     height: 50vh;
     position: fixed;
     top: 0px;
-    right: 30px;
+    right: 0px;
     left: 0px;
+    text-align: center;
     z-index: 10;
     flex-direction: column;
     justify-content: center;
@@ -1220,6 +1221,7 @@ nav .mainMenu .closeMenu {
 nav .openMenu {
     display: block;
   }
+
 nav .mainMenu a:hover {
     background: none;
 }
