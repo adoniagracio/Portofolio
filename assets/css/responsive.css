@@ -74,6 +74,8 @@
   
     .header {
       background-color: transparent;
+      padding: 3px 2%;
+      opacity: 98%;
     }
   
     .about {
@@ -335,5 +337,27 @@
     .section-image {
       padding-right: 15px;
     }
+    .timeline-project {
+      padding: 2rem;
+      padding-bottom: 400px;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-top: 250px;
+    }
+    .top-section {
+      text-align: center;
+      padding: 4rem 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .section:nth-child(odd) {
+      transform: none;
+      
+    }
   }
-  
+  @media screen and (max-width: 362px) {
+
+    .layer>p{
+      font-size: 10px;
+    }
+  }
