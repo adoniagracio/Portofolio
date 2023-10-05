@@ -17,9 +17,15 @@
 
 
 <body>
+    <script>
+        function isPageRefreshed() {
+          return performance.navigation.type === 1;
+        }
+        if (isPageRefreshed()) {
+          window.location.href = "index.html"; 
+        }
+      </script>
     <div class="loading"></div>
-
-
     <header class="header">
         <a href="#" class="logo"></a>
         <nav>
