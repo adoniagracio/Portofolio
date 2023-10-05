@@ -300,14 +300,14 @@
     }
 
     .content-left {
-      width: calc(38% + 2rem);
+      width: calc(40% + 2rem);
       margin-left: -25px;
       margin-top: 33px;
       font-size: 12px;
     }
     .content-right {
-      width: calc(30% + 2rem);
-      margin-right: 0px;
+      width: calc(40% + 2rem);
+      margin-right: -25px;
       margin-top: 33px;
       font-size: 12px;
     }
@@ -328,6 +328,9 @@
     }
     .journey h1{
       font-size: 40px;
+    }
+    .section-image {
+      padding-right: 15px;
     }
   }
   
