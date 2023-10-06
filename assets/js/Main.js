@@ -1,3 +1,5 @@
+
+
 var typed = new Typed(".text", {
 	strings: ["Student at Binus University"],
 	typeSpeed: 100,
@@ -137,3 +139,7 @@ window.addEventListener('scroll', scrollHandler);
 $(window).on('load', function() {
 	$(".loading").addClass('endLoading').fadeOut(2000)
 })
+
+
+  
+

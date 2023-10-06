@@ -1,6 +1,6 @@
 :root {
     --primary-color: #282a3a;
-    --secondary-color: #282a3a;
+    --secondary-color: #282a3b;
     --shadow-color: #fff;
     --text-color: #fff;
     --button-color: #fff;
@@ -14,14 +14,26 @@
   }
   body {
     color: var(--text-color);
-    background: var(--primary-color);
-    /* overflow: hidden; */
+    background-color:var(--primary-color);
+   
   }
+
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+  }
+
+
   .name {
     font-size: 50px;
   }
   .header {
-    /* overflow: hidden; */
     position: sticky;
     top: 0;
     left: 0;
@@ -31,7 +43,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: var(--secondary-color);
     z-index: 100;
   }
   .logo {
@@ -1067,3 +1078,14 @@
     padding-bottom: 50px;
   }
   
+  .background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+
