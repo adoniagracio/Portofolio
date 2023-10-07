@@ -140,6 +140,7 @@ $(window).on('load', function() {
 	$(".loading").addClass('endLoading').fadeOut(2000)
 })
 
+	
 
   
 
