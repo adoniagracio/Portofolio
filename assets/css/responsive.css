@@ -286,9 +286,6 @@
     .mainMenu a:hover::before {
       width: 0%; 
     }
-
-
-  
     nav .mainMenu .closeMenu {
       display: block;
       position: absolute;
