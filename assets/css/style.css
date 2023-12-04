@@ -509,9 +509,11 @@
   
   .row:hover img {
     transform: scale(1.1);
+    filter: blur(8.5px);
   }
   .row:hover .layer {
     height: 100%;
+
   }
   .contact {
     display: flex;
