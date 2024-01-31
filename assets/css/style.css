@@ -10,12 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins", sans-serif;
+    font-family: "poppins", sans-serif; 
   }
   body {
     color: var(--text-color);
     background-color:var(--primary-color);
-
   }
 
   #particles-js {
@@ -101,6 +100,8 @@
     display: none;
     cursor: pointer;
   }
+
+  
   .img {
     width: 600px;
     height: 500px;
@@ -110,9 +111,8 @@
       0 0 100px #0e1116;
   }
   .img2 {
-    width: 400px;
-    height: 500px;
-
+    width: 438px;
+    height: auto;
     border-radius: 100%;
     box-shadow: 0 0 2px #0e1116, 0 0 25px #0e1116, 0 0 50px #0e1116,
       0 0 100px #0e1116;
